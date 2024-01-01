@@ -3,9 +3,13 @@
         <div class="m-auto xl:container px-12 sm:px-0 mx-auto">
             <div class="mx-auto h-full sm:w-max">
                 <div class="m-auto  py-12">
-                    <div class="space-y-4">
-                        <img src="" class="w-40 dark:hidden" alt="martes logo" />
-                        <img src="" class="w-40 hidden dark:block" alt="martes logo" />
+                    <div class="px-5 relative flex items-center">
+                        <img src="./img/final logo.png" class="w-20 dark:hidden" alt="martes logo" />
+                        <img src="./img/final logo.png" class="w-20 hidden dark:block" alt="martes logo" />
+                        <h1
+                            class="text-3xl group-hover:text-gray-700 dark:group-hover:text-gray-50 font-semibold text-sky-800 lg:block dark:text-gray-300">
+                            MARTES
+                        </h1>
                     </div>
                     <div
                         class="mt-12 rounded-3xl border bg-white dark:border-gray-700 dark:bg-gray-800 -mx-6 sm:-mx-10 p-8 sm:p-10">

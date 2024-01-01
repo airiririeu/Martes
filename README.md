@@ -16,3 +16,4 @@
 
 1. npm install
 2. npm run dev"# browser-threat-detection-plugin" 
+"# browser-threat-detection-plugin" 
