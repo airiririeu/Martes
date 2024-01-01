@@ -15,4 +15,4 @@
 ## Local development setup
 
 1. npm install
-2. npm run dev
+2. npm run dev"# browser-threat-detection-plugin" 
