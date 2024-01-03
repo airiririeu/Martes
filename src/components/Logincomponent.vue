@@ -51,7 +51,7 @@
                             <div>
                                 <router-link to="/Dashboard"
                                     class="w-full rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
-                                    <span class="text-base font-semibold text-white dark:text-gray-900">Login</span>
+                                    <span class="text-base font-semibold text-white dark:text-gray-900">Log in</span>
                                 </router-link>
                                 <button href="#" type="reset"
                                     class="mt-2 w-full rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">

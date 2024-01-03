@@ -142,81 +142,30 @@
                             <ul class="mt-10 space-y-2 tracking-wide">
                                 <li>
                                     <router-link to="/account_settings"
-                                        class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
-                                        <span class="text-white dark:group-hover:text-gray-50 font-bold">Account</span>
+                                        class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                                        <span class="text-black dark:group-hover:text-gray-50">Account</span>
                                     </router-link>
                                 </li>
                             </ul>
                         </div>
                         <div class="grid grid-rows-subgrid gap-4 row-span-3 col-span-3"> <!--SUBSPANNN!!!-->
                             <form action="" class="space-y-8 dark:text-white">
-                                <div class="">
-                                    <div class="text-black font-bold py-10">
-                                        <h1 class="text-4xl">Account Settings</h1>
-                                    </div>
-                                    <h2 class="text-xl font-bold mb-8">Change Username</h2>
-                                    <div
-                                        class="relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                        <input id="" type="email" placeholder="New Username"
-                                            class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition">
-                                    </div>
-                                    <div class="mt-5">
-                                        <router-link to="/Dashboard"
-                                            class="w-40 rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
-                                            <span class="text-base font-semibold text-white dark:text-gray-900">Save
-                                                Changes</span>
-                                        </router-link>
-                                    </div>
-                                </div>
-                                <h2 class="text-xl font-bold mb-8">Change Password</h2>
-                                <div class="mb-10">
-                                    <div
-                                        class="w-full relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                        <input id="" type="password" placeholder="Current Password"
-                                            class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition">
-                                    </div>
-                                </div>
-                                <div class="mb-10">
-                                    <div
-                                        class="w-full relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                        <input id="" type="password" placeholder="New Password"
-                                            class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition">
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div
-                                        class="w-full relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                        <input id="" type="password" placeholder="Re-enter New Password"
-                                            class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition">
-                                    </div>
-                                </div>
-                                <div class="mt-5">
-                                    <router-link to="/Dashboard"
-                                        class="w-40 rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
-                                        <span class="text-base font-semibold text-white dark:text-gray-900">Save
-                                            Changes</span>
-                                    </router-link>
-                                </div>
-                                <h2 class="text-xl font-bold mb-8">Change Profile Picture</h2>
                                 <div>
-                                    <div class="grid grid-cols-5 mt-8">
-                                        <img src="./img/hehe.jpg" alt="userdp"
-                                            class="h-10 w-10 rounded-full object-cover lg:h-28 lg:w-28" />
-                                            <router-link to="/Dashboard"
-                                                class="mt-5 w-72 rounded-full bg-sky-300 dark:bg-sky-400 h-11 flex items-center justify-center hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
-                                                <span class="text-base font-semibold text-white dark:text-gray-900">Choose profile picture</span>
-                                            </router-link>
+                                    <div class="text-black font-bold py-10">
+                                        <h1 class="text-4xl">Terms and Conditions</h1>
                                     </div>
                                     <div>
-                                        <div class="mt-5">
-                                            <router-link to="/Dashboard"
-                                                class="w-40 rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
-                                                <span class="text-base font-semibold text-white dark:text-gray-900">Save
-                                                    Changes</span>
-                                            </router-link>
-                                        </div>
+                                    <h1 class="mb-8">
+                                        These Terms and Conditions govern your use of the "Martes" browser-based threat detection plugin extension provided by OTiS Philippines Inc.. By installing, accessing, or using the Extension, you agree to be bound by these Terms. If you do not agree with any part of these Terms, do not use the Extension.
+                                    </h1>
+                                    <h2 class="text-2xl text-sky-600 font-bold">
+                                        1. Extension License and Use
+                                    </h2>
+                                    <div class="text-base mx-7 my-4">
+                                        <span class="font-bold">a. License Grant:</span> We grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Extension for personal, non-commercial use in accordance with these Terms.
+                                        <br><br><span class="font-bold">b. Restrictions:</span> You agree not to reverse engineer, modify, distribute, sublicense, sell, or exploit the Extension for any unauthorized purposes.
                                     </div>
-
+                                </div>
                                 </div>
                             </form>
                         </div>
@@ -235,8 +184,8 @@
                             <ul class="space-y-2 tracking-wide">
                                 <li>
                                     <router-link to="/terms_and_conditions"
-                                        class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
-                                        <span class="group-hover:text-gray-700 dark:group-hover:text-gray-50">Terms &
+                                        class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
+                                        <span class="text-white dark:group-hover:text-gray-50 font-bold">Terms &
                                             Conditions</span>
                                     </router-link>
                                 </li>

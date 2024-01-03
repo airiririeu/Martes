@@ -142,8 +142,8 @@
                             <ul class="mt-10 space-y-2 tracking-wide">
                                 <li>
                                     <router-link to="/account_settings"
-                                        class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
-                                        <span class="text-white dark:group-hover:text-gray-50 font-bold">Account</span>
+                                        class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                                        <span class="text-black dark:group-hover:text-gray-50">Account</span>
                                     </router-link>
                                 </li>
                             </ul>
@@ -224,9 +224,9 @@
                             <ul class="mt-5 space-y-2 tracking-wide">
                                 <li>
                                     <router-link to="/advanced_settings"
-                                        class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                                        class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
                                         <span
-                                            class="group-hover:text-gray-700 dark:group-hover:text-gray-50">Advanced</span>
+                                            class="text-whitw dark:group-hover:text-gray-50 font-bold">Advanced</span>
                                     </router-link>
                                 </li>
                             </ul>
