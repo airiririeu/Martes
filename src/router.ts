@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import LogincomponentVue from "./components/Logincomponent.vue";
 import Dashboardcomponent from "./components/Dashboard.vue";
 import Historycomponent from "./components/History.vue";
@@ -8,42 +8,63 @@ import Advancedcomponent from "./components/advanced_settings.vue";
 import Termsconditions from "./components/terms_and_conditions.vue";
 
 const router = createRouter({
-    history: createWebHashHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
             name: 'Login',
-            component: LogincomponentVue
+            component: LogincomponentVue,
+            meta: {
+                auth: false
+            }
         },
         {
             path: '/dashboard',
             name: 'Dashboard',
-            component: Dashboardcomponent
+            component: Dashboardcomponent,
+            meta: {
+                auth: true
+            }
         },
         {
             path: '/history',
             name: 'History',
-            component: Historycomponent
+            component: Historycomponent,
+            meta: {
+                auth: true
+            }
         },
         {
             path: '/settings',
             name: 'Settings',
-            component: Settingscomponent
+            component: Settingscomponent,
+            meta: {
+                auth: true
+            }
         },
         {
             path: '/account_settings',
             name: 'Account Settings',
-            component: Accountcomponent
+            component: Accountcomponent,
+            meta: {
+                auth: true
+            }
         },
         {
             path: '/advanced_settings',
             name: 'Advanced Settings',
-            component: Advancedcomponent
+            component: Advancedcomponent,
+            meta: {
+                auth: true
+            }
         },
         {
             path: '/terms_and_conditions',
             name: 'Terms & Conditions',
-            component: Termsconditions
+            component: Termsconditions,
+            meta: {
+                auth: false
+            }
         }
     ]
 })
