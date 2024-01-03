@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { auth } from '../firebase';
+
+
+const doLogout = () => {
+    auth.signOut();
+}
+</script>
 <template>
     <body class="bg-gray-100 dark:bg-gray-900">
         <aside
@@ -65,14 +73,14 @@
             </div>
 
             <div class="-mx-6 flex items-center justify-between border-t px-6 pt-4 dark:border-gray-700">
-                <a href="#" class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                <button type="button" @click="doLogout" class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                     </svg>
                     <span class="group-hover:text-gray-700 dark:group-hover:text-white">Logout</span>
-                </a>
+                </button>
             </div>
             <!--side bar options-->
         </aside> <!--Uppershits-->
@@ -226,7 +234,7 @@
                                     <router-link to="/advanced_settings"
                                         class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
                                         <span
-                                            class="text-whitw dark:group-hover:text-gray-50 font-bold">Advanced</span>
+                                            class="text-white dark:group-hover:text-gray-50 font-bold">Advanced</span>
                                     </router-link>
                                 </li>
                             </ul>

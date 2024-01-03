@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { auth } from '../firebase';
+
+
+const doLogout = () => {
+    auth.signOut();
+}
+</script>
 <template>
     <body class="bg-gray-100 dark:bg-gray-900">
         <aside
@@ -65,14 +73,14 @@
             </div>
 
             <div class="-mx-6 flex items-center justify-between border-t px-6 pt-4 dark:border-gray-700">
-                <a href="#" class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
+                <button type="button" @click="doLogout" class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600 dark:text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                     </svg>
                     <span class="group-hover:text-gray-700 dark:group-hover:text-white">Logout</span>
-                </a>
+                </button>
             </div>
             <!--side bar options-->
         </aside> <!--Uppershits-->
@@ -155,17 +163,35 @@
                                         <h1 class="text-4xl">Terms and Conditions</h1>
                                     </div>
                                     <div>
-                                    <h1 class="mb-8">
-                                        These Terms and Conditions govern your use of the "Martes" browser-based threat detection plugin extension provided by OTiS Philippines Inc.. By installing, accessing, or using the Extension, you agree to be bound by these Terms. If you do not agree with any part of these Terms, do not use the Extension.
-                                    </h1>
-                                    <h2 class="text-2xl text-sky-600 font-bold">
-                                        1. Extension License and Use
-                                    </h2>
-                                    <div class="text-base mx-7 my-4">
-                                        <span class="font-bold">a. License Grant:</span> We grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the Extension for personal, non-commercial use in accordance with these Terms.
-                                        <br><br><span class="font-bold">b. Restrictions:</span> You agree not to reverse engineer, modify, distribute, sublicense, sell, or exploit the Extension for any unauthorized purposes.
+                                        <h1 class="mb-8">
+                                            These Terms and Conditions govern your use of the "Martes" browser-based threat
+                                            detection plugin extension provided by OTiS Philippines Inc.. By installing,
+                                            accessing, or using the Extension, you agree to be bound by these Terms. If you
+                                            do not agree with any part of these Terms, do not use the Extension.
+                                        </h1>
+                                        <h2 class="text-2xl text-sky-600 font-bold">
+                                            1. Extension License and Use
+                                        </h2>
+                                        <div class="text-base mx-7 my-4">
+                                            <span class="font-bold">a. License Grant:</span> We grant you a limited,
+                                            non-exclusive, non-transferable, revocable license to download, install, and use
+                                            the Extension for personal, non-commercial use in accordance with these Terms.
+                                            <br><br><span class="font-bold">b. Restrictions:</span> You agree not to reverse
+                                            engineer, modify, distribute, sublicense, sell, or exploit the Extension for any
+                                            unauthorized purposes.
+                                        </div>
+                                        <h2 class="text-2xl text-sky-600 font-bold">
+                                            1. Extension License and Use
+                                        </h2>
+                                        <div class="text-base mx-7 my-4">
+                                            <span class="font-bold">a. License Grant:</span> We grant you a limited,
+                                            non-exclusive, non-transferable, revocable license to download, install, and use
+                                            the Extension for personal, non-commercial use in accordance with these Terms.
+                                            <br><br><span class="font-bold">b. Restrictions:</span> You agree not to reverse
+                                            engineer, modify, distribute, sublicense, sell, or exploit the Extension for any
+                                            unauthorized purposes.
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </form>
                         </div>
@@ -186,13 +212,13 @@
                                     <router-link to="/terms_and_conditions"
                                         class="relative flex items-center space-x-4 rounded-xl bg-gradient-to-r from-sky-800 to-sky-400 px-4 py-3 text-white">
                                         <span class="text-white dark:group-hover:text-gray-50 font-bold">Terms &
-                                            Conditions</span>
-                                    </router-link>
-                                </li>
-                            </ul>
-                        </div>
+                                        Conditions</span>
+                                </router-link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body></template>
