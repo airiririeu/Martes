@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+import { register } from "../services/RegistrationService"
+import Swal from 'sweetalert2';
+import { AuthErrorMessages } from '../firebase';
+
+const email = ref("");
+const password = ref("");
+
+const doSignUp = () => {
+    register(email.value, password.value).then(data => {
+        if(data) {
+            Swal.fire("Success", "Registration Success", "success");
+        }
+    }).catch(err => {
+        Swal.fire("Error", AuthErrorMessages(err.code), "error")
+    })
+}
+
+</script>
 <template>
     <div class="bg-sky-100">
         <div class="m-auto xl:container px-12 sm:px-0 mx-auto">
@@ -19,18 +39,13 @@
                         <div class="mt-10 space-y-8 dark:text-white">
                             <div class="px-72">
                                 <div
-                                    class="relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                    <input id="" type="email" placeholder="Name" v-model="email"
-                                        class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition" />
-                                </div>
-                                <div
                                     class="mt-6 relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
                                     <input id="" type="email" placeholder="Email" v-model="email"
                                         class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition" />
                                 </div>
                                 <div
                                     class="mt-6 relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
-                                    <input id="" type="email" placeholder="Password" v-model="password"
+                                    <input id="" type="password" placeholder="Password" v-model="password"
                                         class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition" />
                                 </div>
                             </div>
@@ -126,8 +141,8 @@
                                 </div>
                             </div>
                             <div>
-                                <button href="#" type="reset"
-                                    class="mt-2 w-80 rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
+                                <button type="button" @click="doSignUp"
+                                    class="w-full mt-2 rounded-full bg-sky-500 dark:bg-sky-400 h-11 flex items-center justify-center px-6 py-3 hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800 transition ease-out duration-700">
                                     <span class="text-base font-semibold text-white dark:text-gray-900">Sign up</span>
                                 </button>
                             </div>

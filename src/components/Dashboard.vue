@@ -1,10 +1,17 @@
 <script setup lang="ts">
-import { auth } from '../firebase';
+import { onMounted, ref } from 'vue';
+import { auth, getCurrentUser } from '../firebase';
 
+const userEmail = ref();
 
 const doLogout = () => {
     auth.signOut();
 }
+
+onMounted(async () => {
+    const user = await getCurrentUser();
+    userEmail.value = user?.email;
+})
 </script>
 
 <template>
@@ -24,9 +31,9 @@ const doLogout = () => {
                 <div class="mt-8 text-center">
                     <img src="./img/hehe.jpg" alt="userdp"
                         class="m-auto h-10 w-10 rounded-full object-cover lg:h-28 lg:w-28" />
-                    <h5 class="mt-4 hidden text-xl font-semibold text-sky-800 lg:block dark:text-gray-300">airi
+                    <h5 class="mt-4 hidden text-xl font-semibold text-sky-800 lg:block dark:text-gray-300">{{ userEmail }}
                     </h5>
-                    <span class="hidden text-gray-400 lg:block">Admin</span>
+                    <span class="hidden text-gray-400 lg:block">Employee</span>
                 </div>
 
                 <ul class="mt-8 space-y-2 tracking-wide">
