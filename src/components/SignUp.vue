@@ -34,17 +34,17 @@ const doSignUp = () => {
                         </router-link>
                     </div>
                     <div
-                        class="mt-12 rounded-3xl border bg-white dark:border-gray-700 dark:bg-gray-800 -mx-6 sm:-mx-10 p-8 sm:p-10">
+                        class="mt-12 rounded-3xl border bg-white dark:border-gray-700 dark:bg-gray-800 -mx-6 p-8">
                         <h3 class="text-center text-2xl font-semibold text-sky-900 dark:text-white">Sign Up</h3>
                         <div class="mt-10 space-y-8 dark:text-white">
-                            <div class="px-72">
+                            <div class="px-0 md:px-72">
                                 <div
-                                    class="mt-6 relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
+                                    class="mt-6 before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
                                     <input id="" type="email" placeholder="Email" v-model="email"
                                         class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition" />
                                 </div>
                                 <div
-                                    class="mt-6 relative before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
+                                    class="mt-6 before:absolute before:bottom-0 before:h-0.5 before:left-0 before:origin-right focus-within:before:origin-left before:right-0 before:scale-x-0 before:m-auto before:bg-sky-600 dark:before:bg-sky-800 focus-within:before:!scale-x-100 focus-within:invalid:before:bg-red-400 before:transition before:duration-300">
                                     <input id="" type="password" placeholder="Password" v-model="password"
                                         class="w-full bg-transparent pb-3  border-b border-gray-300 dark:placeholder-gray-300 dark:border-gray-600 outline-none  invalid:border-red-400 transition" />
                                 </div>
