@@ -64,7 +64,7 @@ const router = createRouter({
             name: 'Terms & Conditions',
             component: Termsconditions,
             meta: {
-                auth: false
+                auth: true
             }
         },
         {
