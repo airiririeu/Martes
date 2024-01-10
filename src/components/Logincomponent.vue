@@ -22,8 +22,8 @@ const doLogin = () => {
 
 </script>
 <template>
-    <div class="bg-sky-100">
-        <div class="m-auto xl:container px-12 sm:px-0 mx-auto">
+    <div class="bg-sky-100 h-full">
+        <div class="w-full xl:container px-12 sm:px-0 mx-auto my-auto">
             <div class="mx-auto h-full sm:w-max">
                 <div class="m-auto  py-12">
                     <div class="px-5 relative">
@@ -31,7 +31,7 @@ const doLogin = () => {
                         <img src="./img/final logo.png" class="w-20 dark:hidden" alt="martes logo" />
                         <img src="./img/final logo.png" class="w-20 hidden dark:block" alt="martes logo" />
                         <h1
-                            class="justify-self-start mt-3 text-3xl group-hover:text-gray-700 dark:group-hover:text-gray-50 font-semibold text-sky-800 lg:block dark:text-gray-300">
+                            class="justify mt-3 text-3xl group-hover:text-gray-700 dark:group-hover:text-gray-50 font-semibold text-sky-800 lg:block dark:text-gray-300">
                             MARTES
                         </h1>
                         </router-link>
@@ -78,8 +78,8 @@ const doLogin = () => {
                     </div>
                     <div class="border-t pt-12 text-gray-500 dark:border-gray-800">
                         <div class="space-x-4 text-center">
-                            <span>&copy; ICT1202-P Group 1</span>
-                            <a href="#" class="text-sm hover:text-sky-900 dark:hover:text-gray-300">Privacy & Terms</a>
+                            <a href="https://www.otismanila.com" class="hover:text-sky-900 dark:hover:text-gray-300">&copy; OTis Philippines Inc.</a>
+                            <a href="/terms_conditions" class="text-sm hover:text-sky-900 dark:hover:text-gray-300">Terms & Conditions</a>
                         </div>
                     </div>
                 </div>

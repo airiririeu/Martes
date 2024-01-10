@@ -7,6 +7,7 @@ import Accountcomponent from "./components/account_settings.vue";
 import Advancedcomponent from "./components/advanced_settings.vue";
 import Termsconditions from "./components/terms_and_conditions.vue";
 import SignUp from "./components/SignUp.vue";
+import TC from "./components/tc.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,6 +72,14 @@ const router = createRouter({
             path: '/signup',
             name: 'Sign Up',
             component: SignUp,
+            meta: {
+                auth: false
+            }
+        },
+        {
+            path: '/terms_conditions',
+            name: 'Terms and Conditions',
+            component: TC,
             meta: {
                 auth: false
             }
